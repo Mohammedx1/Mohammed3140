@@ -1,4 +1,4 @@
-My name is mohammed but some call me by my middle name Sam. 
+My name is mohammed
 
 I'm a senior who deeply loves nature and wants to explore 
 every mountain, waterfall and lakes. 
