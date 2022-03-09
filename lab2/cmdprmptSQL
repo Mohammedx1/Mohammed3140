@@ -1,0 +1,409 @@
+sqlite> .mode csv
+sqlite> .import data_lab1/data.csv temp
+sqlite> .tables
+Car_Score  Persons    cars       temp
+sqlite> INSERT INTO cars(CAR_ID,Year,Make,Model,Owner)
+   ...> SELECT Car_ID, Year, Make, Model, Name FROM temp;
+sqlite> SELECT * FROM cars;
+48,2015,Acura,TLX,Hernando
+124,2015,Jeep,Wrangler,Noel
+222,2015,Lexus,Is250,Edan
+207,1993,Honda,"Civic eG",Hieronymus
+167,2016,Ford,Mystang,Nickolas
+159,2013,Hyundai,"Gen coupe",Martin
+20,2009,Infiniti,G37,Aldridge
+178,2009,Honda,Oddesy,Ambros
+30,2012,Hyundai,Celoster,Quincy
+1,2012,Subaru,WRX,Palmer
+51,2015,Subaru,WRX,Temple
+183,2005,Volkswagen,Jetta,Zachery
+177,2005,Volkswagen,"Jetta gli",Rupert
+5,2003,Acura,Rsx,Sayers
+218,2010,Chevy,Camaro,Horst
+39,2011,Honda,Civic,Muffin
+68,2013,Nissan,Altima,Scot
+10,2001,Nissan,S15,Harcourt
+67,2015,Subaru,Sti,Wilbur
+43,2011,Toyota,"4 Runner",Georgi
+170,2014,Chevy,Cruze,Osborn
+216,2007,Chrystler,300,Asher
+99,2014,Honda,"Civic si",Clyde
+89,2014,Honda,"Civic si",Nealon
+95,2004,Infiniti,G35,Norry
+228,2010,Nissan,370,Baillie
+7,2014,Nissan,Sentra,Alix
+14,1990,Nissan,Skyline,Hugibert
+8,1991,Nissan,Skyline,Sigfried
+145,1990,Volkswagen,Gti,Reade
+102,2015,Honda,Accord,Correy
+36,2016,Subaru,WRX,Ozzy
+189,2012,Toyota,"Fj cruiser",Derry
+111,2007,Bmw,328i,Marlon
+140,1995,Mitsu,Evo8,Roger
+161,2012,Nissan,370z,Sheffy
+37,2015,Subaru,Sti,Feodor
+243,2008,Toyota,Matrix,Sollie
+184,2010,Volkswagen,Cc,Ernie
+66,2010,Volkswagen,Gti,Teador
+101,2014,Honda,Civic,Theodore
+21,2009,Subaru,WRX,Alvis
+200,2016,Subaru,WRX,Rand
+2,2016,Bmw,M2,Jordon
+23,1998,Subaru,Legacy,Tremayne
+59,2012,Volkswagen,Golf,Rolf
+42,2001,Dodge,Viper,Rowney
+83,2014,Honda,Accord,Palmer
+16,2008,Nissan,350z,Killy
+181,2003,Volkswagen,Gti,Arri
+0,2015,Chevy,Camaro,Jordan
+88,2008,Honda,Accord,Karney
+25,2012,Mercedes,C250,Yvor
+176,2014,Mitsu,Lancer,Germaine
+134,2013,Subaru,WRX,Cooper
+127,2013,Acura,Tsx,Donal
+104,2014,Honda,"Civic si",Tanner
+120,2014,Ford,"Focus st",Elwyn
+85,2017,Honda,Accord,Sholom
+Showcar,2014,Nissan,Gtr,Tally
+108,2013,Audi,S4,Abdul
+98,2012,Mercedes,C63,Englebert
+130,2016,Honda,"Civic si",Denys
+12,1990,Nissan,240,Klemens
+232,2018,Subaru,WRX,Marmaduke
+Vip,2008,Volkswagen,Gli,Salomon
+96,2017,Volkswagen,Gti,Wynn
+15,2014,Audi,S4,Blane
+65,2009,Honda,Fit,Trumaine
+92,2017,Hyundai,"Elantra sport",Myles
+179,2004,Volkswagen,R32,Ashlin
+63,2010,Honda,Civic,Cris
+35,2016,Honda,Civic,Gerhardt
+79,1993,Mazda,Miata,Rustin
+4341,1992,Nissan,Rps13,Ronald
+156,2014,Volkswagen,Gli,Jamison
+220,2004,Audi,A4,Vladimir
+44,2018,Honda,"Civic si",Elisha
+19,2001,Mitsu,Evo7,Jae
+123,2006,Lexus,Sc430,Patrizius
+57,2015,Scion,Frs,Arman
+230,2004,Acura,Tsx,Cullen
+33,2015,Subaru,Sti,Gideon
+75,2012,Subaru,WRX,Redford
+175,2006,Honda,Civic,Taber
+115,2001,Honda,Crv,Udale
+153,2017,Subaru,Brz,Nick
+76,2005,Subaru,Sti,Roi
+56,2009,Volkswagen,Jetta,Haily
+50,2015,Acura,TLX,Homerus
+163,2013,Mitsu,Ralliart,Shepherd
+53,2013,Subaru,WRX,Pembroke
+241,2007,Toyota,Camry,Hastings
+114,2010,Volkswagen,Gti,Roderick
+41,2012,Acura,Tsx,Barbabas
+116,2008,Audi,A4,Obidiah
+137,2017,Ford,"Focus rs",Tristam
+212,2001,Lexus,Is300,Dav
+52,2007,Mazda,"Speed 3",Ber
+93,2005,Acura,TL,Cesaro
+226,2008,Honda,Accord,Koenraad
+22,2007,Honda,Civic,Lowe
+70,2014,Honda,Civic,Paul
+128,2010,Infiniti,G37,Martin
+40,2007,Subaru,Legacy,Aksel
+238,1982,Volkswagen,Rabbit,Renaud
+31,2007,Honda,Fit,Jereme
+71,2008,Acura,TL,Osborn
+18,2015,Audi,S3,Greg
+38,2017,Hyundai,"Elantra sport",Mill
+46,2008,Volkswagen,R32,Early
+49,1997,Acura,Integra,Ted
+28,1995,Bmw,318xi,Iggie
+219,2016,Ford,"Focus rs",Spenser
+185,2013,Volkswagen,Jett,Taddeusz
+162,2014,Nissan,370z,Baudoin
+180,2011,Volkswagen,Gti,Jeromy
+103,2010,Acura,Tsx,Beaufort
+197,2010,Audi,A4,Enrico
+74,2015,Honda,Accord,Bartholomeo
+150,2006,Nissan,350z,Bar
+78,2015,Mazda,6,Nollie
+141,1993,Mazda,Miata,Diego
+17,2016,Mercedes,C43,Gustavo
+187,2007,Subaru,Legacy,Griffith
+69,2018,Subaru,WRX,Amory
+100,2006,Volvo,S60r,Elwin
+112,2008,Acura,TL,Web
+172,2014,Bmw,4,Aurthur
+91,2010,Mitsu,Lancer,Coop
+158,2007,Nissan,350z,Wally
+182,2012,Volkswagen,Cc,Darcy
+225,2016,Acura,TLX,Abbey
+81,2016,Volkswagen,GTI,Ware
+6,2016,Volkswagen,"Golf r",Hamil
+121,2012,Acura,TL,Hunt
+211,2004,Acura,Tsx,Ellswerth
+186,2012,Volkswagen,Gli,Uriah
+4,2007,Honda,Civic,Evan
+72,2016,Honda,"Civic si",Ken
+45,2006,Acura,TL,Kylie
+1051,2006,Acura,Tsx,Eli
+84,2012,Mercedes,Cl63amg,Orton
+118,1993,Honda,Civic,Ginger
+174,2006,Acura,Rsx,Teodor
+138,1990,Mazda,Miata,Andras
+242,2014,Nissan,Maxima,Tris
+3,2011,Nissan,370,Barbabas
+193,2014,Nissan,Ssntra,Napoleon
+94,2004,Volkswagen,Gti,Estevan
+11,1991,Nissan,Skyline,Korey
+86,1996,Volkswagen,Jetta,Hebert
+9,1996,Nissan,240,Pierson
+142,1993,Toyota,Supra,Giorgio
+126,2010,Volkswagen,Eos,Stern
+144,2016,Volkswagen,Gti,Davidde
+110,2011,Toyota,Camry,Ugo
+34,2010,Honda,Fit,Sutherland
+190,1995,Lexus,Sc300,Parker
+235,2013,Scion,Frs,Huntley
+24,2013,Subaru,BRZ,Sauveur
+64,2004,Subaru,Forester,Carver
+122,2011,Infiniti,M37s,Terrence
+106,2007,Acura,"Tl type s",Ignazio
+113,2012,Acura,"Tsx sportwagon",Marcel
+13,2016,Honda,"Civic 1.5t",Robbert
+237,1987,Volkswagen,Jetta,Padraic
+sqlite> .schema cars
+CREATE TABLE cars(CAR_ID int NOT NULL,Year int,Make varchar(255),Model varchar(255),Owner varchar(255),PRIMARY KEY (CAR_ID));
+sqlite> .table
+Car_Score  Persons    cars       temp
+sqlite> .schema Persons
+CREATE TABLE Persons (
+Judge_ID int NOT NULL,
+Judge_Name varchar(255),
+PRIMARY KEY (Judge_ID));
+sqlite> ALTER TABLE Persons
+   ...> RENAME TO judges;
+sqlite> .table
+Car_Score  cars       judges     temp
+sqlite> INSERT INTO judges (Judge_ID, Judge_Name)
+   ...> select Judge_ID, Judge_Name FROM temp;
+Runtime error: UNIQUE constraint failed: judges.Judge_ID (19)
+sqlite> INSERT INTO judges (Judge_ID, Judge_Name)
+   ...> SELECT DISTINCT Judge_ID, Judge_Name FROM temp;
+sqlite> SELECT * FROM judges
+   ...> ;
+J04|Bob
+J02|Carl
+J05|Adrian
+J06|Aaron
+J09|Dan
+J01|Wayne
+J03|Carol
+J08|Danny
+sqlite> SELECT Car_Score.rowid, Car_Score.Car_ID, Year, Make, Model
+   ...> FROM Car_Score
+   ...> INNER JOIN cars ON Car_Score.Car_ID = cars.Car_ID;
+168|0|2015|Chevy|Camaro
+160|1|2012|Subaru|WRX
+111|2|2016|Bmw|M2
+18|3|2011|Nissan|370
+129|4|2007|Honda|Civic
+53|5|2003|Acura|Rsx
+47|6|2016|Volkswagen|Golf r
+93|7|2014|Nissan|Sentra
+64|8|1991|Nissan|Skyline
+63|9|1996|Nissan|240
+88|10|2001|Nissan|S15
+96|11|1991|Nissan|Skyline
+40|12|1990|Nissan|240
+14|13|2016|Honda|Civic 1.5t
+105|14|1990|Nissan|Skyline
+3|15|2014|Audi|S4
+144|16|2008|Nissan|350z
+87|17|2016|Mercedes|C43
+81|18|2015|Audi|S3
+77|19|2001|Mitsu|Evo7
+80|20|2009|Infiniti|G37
+39|21|2009|Subaru|WRX
+110|22|2007|Honda|Civic
+38|23|1998|Subaru|Legacy
+91|24|2013|Subaru|BRZ
+22|25|2012|Mercedes|C250
+152|28|1995|Bmw|318xi
+30|30|2012|Hyundai|Celoster
+10|31|2007|Honda|Fit
+29|33|2015|Subaru|Sti
+123|34|2010|Honda|Fit
+42|35|2016|Honda|Civic
+24|36|2016|Subaru|WRX
+49|37|2015|Subaru|Sti
+37|38|2017|Hyundai|Elantra sport
+25|39|2011|Honda|Civic
+158|40|2007|Subaru|Legacy
+33|41|2012|Acura|Tsx
+151|42|2001|Dodge|Viper
+48|43|2011|Toyota|4 Runner
+74|44|2018|Honda|Civic si
+72|45|2006|Acura|TL
+89|46|2008|Volkswagen|R32
+36|48|2015|Acura|TLX
+71|49|1997|Acura|Integra
+9|50|2015|Acura|TLX
+54|51|2015|Subaru|WRX
+58|52|2007|Mazda|Speed 3
+41|53|2013|Subaru|WRX
+70|56|2009|Volkswagen|Jetta
+21|57|2015|Scion|Frs
+97|59|2012|Volkswagen|Golf
+16|63|2010|Honda|Civic
+157|64|2004|Subaru|Forester
+7|65|2009|Honda|Fit
+162|66|2010|Volkswagen|Gti
+128|67|2015|Subaru|Sti
+140|68|2013|Nissan|Altima
+150|69|2018|Subaru|WRX
+166|70|2014|Honda|Civic
+156|71|2008|Acura|TL
+161|72|2016|Honda|Civic si
+149|74|2015|Honda|Accord
+155|75|2012|Subaru|WRX
+136|76|2005|Subaru|Sti
+84|78|2015|Mazda|6
+122|79|1993|Mazda|Miata
+108|81|2016|Volkswagen|GTI
+5|83|2014|Honda|Accord
+28|84|2012|Mercedes|Cl63amg
+69|85|2017|Honda|Accord
+148|86|1996|Volkswagen|Jetta
+57|88|2008|Honda|Accord
+126|89|2014|Honda|Civic si
+8|91|2010|Mitsu|Lancer
+92|92|2017|Hyundai|Elantra sport
+113|93|2005|Acura|TL
+139|94|2004|Volkswagen|Gti
+135|95|2004|Infiniti|G35
+138|96|2017|Volkswagen|Gti
+101|98|2012|Mercedes|C63
+79|99|2014|Honda|Civic si
+117|100|2006|Volvo|S60r
+167|101|2014|Honda|Civic
+147|102|2015|Honda|Accord
+27|103|2010|Acura|Tsx
+60|104|2014|Honda|Civic si
+23|106|2007|Acura|Tl type s
+134|108|2013|Audi|S4
+44|110|2011|Toyota|Camry
+146|111|2007|Bmw|328i
+6|112|2008|Acura|TL
+4|113|2012|Acura|Tsx sportwagon
+107|114|2010|Volkswagen|Gti
+46|115|2001|Honda|Crv
+100|116|2008|Audi|A4
+68|118|1993|Honda|Civic
+95|120|2014|Ford|Focus st
+67|121|2012|Acura|TL
+66|122|2011|Infiniti|M37s
+31|123|2006|Lexus|Sc430
+2|124|2015|Jeep|Wrangler
+15|126|2010|Volkswagen|Eos
+17|127|2013|Acura|Tsx
+1|128|2010|Infiniti|G37
+112|130|2016|Honda|Civic si
+52|134|2013|Subaru|WRX
+50|137|2017|Ford|Focus rs
+145|138|1990|Mazda|Miata
+65|140|1995|Mitsu|Evo8
+106|141|1993|Mazda|Miata
+43|142|1993|Toyota|Supra
+99|144|2016|Volkswagen|Gti
+83|145|1990|Volkswagen|Gti
+116|150|2006|Nissan|350z
+73|153|2017|Subaru|Brz
+45|156|2014|Volkswagen|Gli
+35|158|2007|Nissan|350z
+133|159|2013|Hyundai|Gen coupe
+19|161|2012|Nissan|370z
+86|162|2014|Nissan|370z
+115|163|2013|Mitsu|Ralliart
+121|167|2016|Ford|Mystang
+56|170|2014|Chevy|Cruze
+114|172|2014|Bmw|4
+163|174|2006|Acura|Rsx
+13|175|2006|Honda|Civic
+78|176|2014|Mitsu|Lancer
+137|177|2005|Volkswagen|Jetta gli
+26|178|2009|Honda|Oddesy
+82|179|2004|Volkswagen|R32
+20|180|2011|Volkswagen|Gti
+94|181|2003|Volkswagen|Gti
+120|182|2012|Volkswagen|Cc
+127|183|2005|Volkswagen|Jetta
+154|184|2010|Volkswagen|Cc
+153|185|2013|Volkswagen|Jett
+132|186|2012|Volkswagen|Gli
+104|187|2007|Subaru|Legacy
+55|189|2012|Toyota|Fj cruiser
+143|190|1995|Lexus|Sc300
+131|193|2014|Nissan|Ssntra
+164|197|2010|Audi|A4
+85|200|2016|Subaru|WRX
+76|207|1993|Honda|Civic eG
+59|211|2004|Acura|Tsx
+159|212|2001|Lexus|Is300
+11|216|2007|Chrystler|300
+34|218|2010|Chevy|Camaro
+103|219|2016|Ford|Focus rs
+130|220|2004|Audi|A4
+75|222|2015|Lexus|Is250
+51|225|2016|Acura|TLX
+124|226|2008|Honda|Accord
+12|228|2010|Nissan|370
+119|230|2004|Acura|Tsx
+61|232|2018|Subaru|WRX
+118|235|2013|Scion|Frs
+142|237|1987|Volkswagen|Jetta
+98|238|1982|Volkswagen|Rabbit
+109|241|2007|Toyota|Camry
+102|242|2014|Nissan|Maxima
+141|243|2008|Toyota|Matrix
+32|1051|2006|Acura|Tsx
+90|4341|1992|Nissan|Rps13
+62|Showcar|2014|Nissan|Gtr
+125|Vip|2008|Volkswagen|Gli
+sqlite> SELECT Car_Score.rowid, Car_Score.Car_ID, Year, Make, Model
+ ...> FROM Car_Score
+ ...> INNER JOIN cars ON Car_Score.Car_ID = cars.Car_ID
+ ...> ORDER BY Car_Score.rowid ASC;
+1|128|2010|Infiniti|G37
+2|124|2015|Jeep|Wrangler
+3|15|2014|Audi|S4
+4|113|2012|Acura|Tsx sportwagon
+5|83|2014|Honda|Accord
+6|112|2008|Acura|TL
+7|65|2009|Honda|Fit
+8|91|2010|Mitsu|Lancer
+9|50|2015|Acura|TLX
+10|31|2007|Honda|Fit
+11|216|2007|Chrystler|300
+12|228|2010|Nissan|370
+13|175|2006|Honda|Civic
+14|13|2016|Honda|Civic 1.5t
+15|126|2010|Volkswagen|Eos
+16|63|2010|Honda|Civic
+17|127|2013|Acura|Tsx
+18|3|2011|Nissan|370
+19|161|2012|Nissan|370z
+20|180|2011|Volkswagen|Gti
+21|57|2015|Scion|Frs
+22|25|2012|Mercedes|C250
+23|106|2007|Acura|Tl type s
+24|36|2016|Subaru|WRX
+25|39|2011|Honda|Civic
+26|178|2009|Honda|Oddesy
+27|103|2010|Acura|Tsx
+28|84|2012|Mercedes|Cl63amg
+29|33|2015|Subaru|Sti
+30|30|2012|Hyundai|Celoster
+31|123|2006|Lexus|Sc430
+32|1051|2006|Acura|Tsx
+33|41|2012|Acura|Tsx
