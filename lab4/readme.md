@@ -75,3 +75,10 @@ The database is already populated with 30 random values from https://www.mockaro
 
 Node version
 The Node version used was v16.15.0.
+
+Documentation used:
+https://developerhowto.com/2018/12/29/build-a-rest-api-with-node-js-and-express-js/
+
+https://www.pluralsight.com/courses/designing-restful-web-apis?aid=701j0000001heIoAAI&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=US_Dynamic&utm_content=&cq_cmp=175953558&gclid=Cj0KCQjwpcOTBhCZARIsAEAYLuWtrS3WRi0C_8Eef4ThGLVd9kSYBP1JSOnGmglIkaE6AQbTVZK4QcIaAnzdEALw_wcB
+
+https://www.udemy.com/course/restful-api-with-express/
