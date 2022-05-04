@@ -1,4 +1,4 @@
-Simple NodeJS Rest API with CRUD routes. Using SQLite database
+ Node.js Rest API. Using SQLite database
 
 Add new product:
 http://localhost:4300/api/product
