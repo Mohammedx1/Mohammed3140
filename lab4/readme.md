@@ -11,11 +11,7 @@ Sending a JSON body:
 	"price": 2.00,
 	"currency": "EUR" 
 }
-or an array of products:
 
-[
-	{...},{...}
-]
 
 PUT
 Update a product:
@@ -32,9 +28,7 @@ Sending a JSON body: ID is the only MANDATORY
 }
 or an array of products:
 
-[
-	{...},{...}
-]
+
 
 DELETE
 Delete a product:
@@ -48,28 +42,28 @@ Sending a JSON body: ID is the only MANDATORY
 	"price": 2.00,
 	"currency": "EUR" 
 }
-or an array of products:
 
-[
-	{...},{...}
-]
+
+
 GET
 Load products by ID:
 http://localhost:4300/api/product/id/$id
 example: http://localhost:4300/api/product/id/15
 
+
 Load all products:
 http://localhost:4300/api/product/
 Load products by any attribute and value:
 http://localhost:4300/api/product/$attribute/$name
-example:
 
+example:
 http://localhost:4300/api/product/price/24
 http://localhost:4300/api/product/name/Suntone $attribute = ['name', 'price', 'currency', 'description'] (this is not checked values, wrong parameters will return a DB error.)
+
 Load all products sorting by attribute
 http://localhost:4300/api/product/sort/$attribute
-example:
 
+example:
 http://localhost:4300/api/product/sort/price
 http://localhost:4300/api/product/sort/name
 $attribute = ['name', 'price', 'currency', 'description'] (this is not checked values, wrong parameters will return a DB error)
